@@ -1,0 +1,84 @@
+#topbar {
+  background: #242424;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+#sampleInstructions {
+  padding: 10px;
+  background-color: #242424;
+  width: 300px;
+  color: white;
+}
+
+/*for saving WebMap: bottom-right*/
+#sidebarDiv {
+  width: 240px;
+  padding: 10px;
+  height: 200px;
+}
+
+/*for map note text editing: bottom-left*/
+#textInputDiv {
+  width: 200px;
+  padding: 5px;
+  color: black;
+  background-color: white;
+}
+
+#overlayDiv {
+  z-index: 1;
+  position: absolute;
+  margin: auto auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 280px;
+  height: 180px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid grey;
+  visibility: hidden;
+}
+
+.action-button {
+  margin-right: 5px;
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid #d3d3d3;
+  color: #adadad;
+  height: 32px;
+  width: 32px;
+  text-align: center;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  font-family: Arial;
+}
+
+.action-button:hover,
+.action-button:focus {
+  background: #0079c1;
+  color: #e4e4e4;
+}
+
+.active {
+  background: #0079c1;
+  color: #e4e4e4;
+}
+
+button:disabled {
+  opacity: 0.4;
+  -moz-opacity: 0.4; /* Firefox and Mozilla browsers */
+  -webkit-opacity: 0.4; /* Safari */
+  cursor: default;
+}
+
+input[type="text"] {
+  width: 100%;
+}
